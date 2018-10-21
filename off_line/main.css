@@ -1,0 +1,21 @@
+.tela1, .tela2, .tela3{
+    height: 100vh;
+}
+.tela1{
+    background-image: url('../img/SplitShire-08108.jpg') ;
+    background-position: center; /* imagem fica centralizada*/
+    background-repeat: no-repeat; /*imagem não repete: */
+    background-attachment: fixed; /*imagem permanece fixa em relação à viewport (janela do navegador) e não rola juntamente com o conteúdo*/
+    background-size: cover; /*Força a cobrir toda a imagem*/
+    
+}
+.tela2{
+
+}
+#info-inicial{
+    padding: 40vh 0; /* centralizar o conteudo da tela 1 */
+   
+}
+img{
+   
+}

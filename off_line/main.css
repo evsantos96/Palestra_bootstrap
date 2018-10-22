@@ -1,4 +1,4 @@
-.tela1, .tela2, .tela3{
+.tela1, .tela2{
     height: 100vh;
 }
 .tela1{
@@ -10,12 +10,24 @@
     
 }
 .tela2{
-
+    background-color: #ACCBE1;
+}
+.tela3{
+    height: 60vh;
+    
 }
 #info-inicial{
     padding: 40vh 0; /* centralizar o conteudo da tela 1 */
    
 }
 img{
-   
+    width: 350px;
+}
+@media only screen and (max-width:767px){
+    img{
+        margin: 0 auto;
+    }
+}
+#conteudo{
+    padding: 20% 0;
 }

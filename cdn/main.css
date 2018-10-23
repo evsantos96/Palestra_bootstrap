@@ -1,0 +1,53 @@
+.tela1, .tela2, .tela3{
+    height: 100vh; /*definindo a altura das telas (paginas) do layout*/
+}
+.tela1{
+    background-image: url('../img/SplitShire-08108.jpg') ;
+    background-position: center; /* imagem fica centralizada*/
+    background-repeat: no-repeat; /*imagem não repete: */
+    background-attachment: fixed; /*imagem permanece fixa em relação à viewport (janela do navegador) e não rola juntamente com o conteúdo*/
+    background-size: cover; /*Força a cobrir toda a imagem*/
+    
+}
+
+/*tela 1*/
+#info-inicial{
+    padding: 40vh 0; /* centralizar o conteudo da tela 1 */ 
+}
+/*fim tela 1*/
+
+/*tela 2*/
+img{
+    width: 250px; /*Definindo o tamanho da imagem */
+}
+#conteudo{
+    padding: 20% 0; /*alinhando o conteudo da tela2*/
+}
+.tela2{
+    background-color: #ACCBE1;
+}
+@media only screen and (min-width:768px){ /*pequeno ajuste no form-inline enquanto a tela estive acima de .col-md*/
+    .form-inline{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+/*fim tela 2*/
+
+/* tela 3*/
+#formulario{
+    padding: 20vh 0;/*alinhando o conteudo da tela3*/
+}
+.form-inline{
+    margin: 20px 0; /*espaçamento entre form-inline e o texto */
+}
+/*fim tela3*/
+
+/*rodapé*/
+#dirietos{
+    line-height:40px;
+}
+#rodape{
+    background-color: #222;
+}
+/*fim rodapé*/

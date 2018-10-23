@@ -3,97 +3,106 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <meta http-equiv="X-UA-Compull-rightpatible" content="IE=edge">
+    <title>bootstrap - off_line</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../off_line/main.css">
     <link rel="stylesheet" href="../off_line/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="tela1">
+
+    <div class="tela1" id="tela1">
         <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href=".tela2">Sobre</a></li>
-                    <li><a href=".tela3">Contato</a></li>
-                </ul>
-                <a class="navbar-brand" href="#">Bootstrap</a>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#movelmenu"
+                        aria-expanded="false"> <span class="sr-only"> toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Estacio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="movelmenu">
+                    <ul class="nav navbar-nav navbar-right" id="nav">
+                        <li class="active"><a href="#tela1">Home</a></li>
+                        <li><a href="#tela2">Sobre</a></li>
+                        <li><a href="#tela3">Contato</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="container">
             <section class="text-center" id="info-inicial">
                 <h2 class="text-primary">Bem vindo ao bootstrap</h2>
                 <p class="text-info text-uppercase"><strong> existe o inicio de tudo </strong></p>
-                <button class="btn btn-warning">Começa agora</button>
+                <a href="https://getbootstrap.com.br/docs/3.3/" target="_blank"> <button class="btn btn-warning">Começa agora</button></a>
             </section>
         </div>
     </div>
-    <div class="tela2">
+    <div class="tela2" id="tela2">
         <div class="container">
             <div class="row">
                 <section id="conteudo">
-                    <p class="col-md-5 col-md-offset-1">
+                    <p class="col-md-5 col-md-offset-1 text-justify">
                         Aliqua amet Lorem tempor duis aliquip elit exercitation do sit consectetur labore veniam labore
                         veniam. Et sit magna voluptate aliqua deserunt sunt ex fugiat nisi officia consequat pariatur
                         elit. Nisi elit ex elit est ullamco dolore ipsum dolore non ut ea. Do do officia duis occaecat
                         minim cillum ut deserunt exercitation irure. Aliquip amet ex dolore laborum non veniam.
                         Deserunt irure do nisi culpa culpa.
                     </p>
-
-                    <div class="col-md-4 col-md-offset-1 col-sm-offset-3 ">
-                        <img class="img-responsive" src="../img/bootstrap-stack.png">
+                    <div class="col-md-4 col-md-offset-1 ">
+                        <img class="img-responsive center-block" src="../img/bootstrap-stack.png">
                     </div>
                 </section>
             </div>
         </div>
     </div>
-    <div class="tela3">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2" style="background-color: #fff">
-                <div class="text-center">
-                    <h3>Entre em Contato</h3>
-                </div>
+    <div class="tela3" id="tela3">
+        <div class="container" id="formulario">
+            <div class="col-md-8 col-md-offset-2 col-lg-offset-2">
+                <h3 class="text-center">Entre em Contato</h3>
                 <form>
-                    <div class="form-group">
-                        <label> Nome</label>
-                        <input type="text" required class="form-control" placeholder="Digite seu nome">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="nome"> Nome</label>
+                            <input type="text" required class="form-control" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group ">
+                            <label for="sobrenome"> Sobrenome</label>
+                            <input type="text" required class="form-control" id="sobrenome" placeholder="Digite seu nome">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label> Email</label>
-                        <input type="email" required class="form-control" placeholder="Digite seu email">
+                    <div class="form-group ">
+                        <label for="email"> Email</label>
+                        <input type="email" required class="form-control" id="email" placeholder="Digite seu email">
                     </div>
-                    <div class="form-group">
-                        <label for="username"> Telefone</label>
-                        <input type="number" required class="form-control" placeholder="Digite seu telefone">
+                    <div class="form-group ">
+                        <label for="telefone"> Telefone</label>
+                        <input type="number" required class="form-control" id="telefone" placeholder="Digite seu telefone">
                     </div>
                     <div class="form-group">
                         <div class="row">
                             <div class="col-lg-6 col-lg-offset-3">
                                 <input type="submit" name="login-submit" id="" class="form-control btn btn-success"
                                     value="Enviar">
-                                <br>
-                                <br>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <footer class="navbar-inverse">
-                <div class="container">
-                     <h3 class="text-center">Everton</h3>
-                </div>
-            </footer>
+    </div>
+    <footer class="container-fluid" id="rodape">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p class="text-center text-info" id="dirietos">&copy Everton Santos - Todos os Dirietos reservados</p>
+        </div>
+    </footer>
 
-
-        <script>
-
-        </script>
-        <script src="../off_line/js/jquery.js"></script>
-        <script src="main.js"></script>
-        <script src="../off_line/js/bootstrap.min.js"></script>
+    <script src="../off_line/js/jquery.js"></script>
+    <script src="main.js"></script>
+    <script src="../off_line/js/bootstrap.min.js"></script>
 </body>
 
 </html>
